@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Vue</title>
+    <style>
+        body, #content {
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content" :style="bgLY">
+
+        <h1>{{ phrase }}</h1>
+        <img :src="imagePath" :style="imageStyle">
+
+    </div>
+    
+    <!-- development ver VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>
